@@ -150,7 +150,7 @@ async def handle_slash_command(
         return PlainTextResponse("")
     except Exception as ex:
         print(" Error in slash command:", str(ex))
-        return PlainTextResponse("")  # Fully silent
+        return PlainTextResponse("")  
 
 
 @app.get("/slack/oauth/callback")
